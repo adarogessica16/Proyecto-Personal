@@ -1,6 +1,6 @@
 from django.db import models
-from registro.models import Usuario  # Importa el modelo Usuario de la aplicación "registro"
-from menu.models import Menu  # Importa el modelo Menu de la aplicación "menu"
+from registro.models import Usuario
+from menu.models import Menu 
 
 class Pedido(models.Model):
     cliente = models.ForeignKey(Usuario, on_delete=models.CASCADE)
